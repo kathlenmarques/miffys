@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Miffy's</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Miffy's</h1>
+            <nav>
+                <ul class="menu">
+                    <li onclick="audio.play();">
+                        Sobre a Loja
+                    </li>
+    
+                    <li onclick="audio.play();">
+                        Produtos
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </nav>
+        </div>         
+    </header>
+
+    <div class="container">
+        <main>
+            <section>
+                <article class="sobre-a-loja">
+                        <div class="img-loja">
+                        <img src="images/de-mesa-miffy-branco-miffy_st0-removebg-preview.png" style="width: 400px;" alt="">
+                        </div>
+                        <div class="texto-loja">
+                        <h2>Sobre nós</h2>
+                        <div id="linha"></div>
+                        <p>Miffy ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quia voluptates id quis, quo odit nisi nam iure sunt mollitia assumenda. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores magnam ratione, hic deserunt, modi porro quo pariatur doloribus suscipit, expedita dolorem rem numquam ipsum sit reiciendis earum. Placeat, nam in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim excepturi est modi, delectus dignissimos eos nam deleniti quae culpa cupiditate, suscipit, dolore dolor consequuntur! Culpa similique dolorem nihil eum reiciendis!</p>
+                        </div>
+                </article>
+            </section>
+
+            <section>
+                <h2 id="titulo-produtos">Produtos</h2>
+                <div class="produtos">
+                    <article class="produto">
+                        <a href="#">
+                            <img src="images/shopping (1).webp" alt="">
+                            <h3>Ear Buds Miffy</h3>
+                            <h3>$0.00</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing arelitelit.</p>
+                        </a>
+                        <button type="button" onclick="audio.play();">Adicionar ao Carrinho</button>
+                    </article>
+                    <article class="produto">
+                        <a href="#">
+                            <img src="images/adorno.webp" alt="">
+                            <h3>Adorno Parede Miffy</h3>
+                            <h3>$0.00</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing arelitelit.</p>
+                        </a>
+                        <button type="button" onclick="audio.play();">Adicionar ao Carrinho</button>
+                    </article>
+                    <article class="produto">
+                        <a href="#">
+                            <img src="images/lancheira.webp" alt="">
+                            <h3>Lancheira Miffy</h3>
+                            <h3>$0.00</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing arelitelit.</p>
+                        </a>
+                        <button type="button" onclick="audio.play();">Adicionar ao Carrinho</button>
+                    </article>
+                    <article class="produto">
+                        <a href="#">
+                            <img src="images/prato.webp" alt="">
+                            <h3>Prato Miffy</h3>
+                            <h3>$0.00</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing arelitelit.</p>
+                        </a>
+                        <button type="button" onclick="audio.play();">Adicionar ao Carrinho</button>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+     <span>2024 &copy; Miffy's - Todos os direitos reservados</span>
+    </footer>
+    <script type="text/javascript"> 
+        const audio = new Audio();
+        audio.src ="sounds/click.wav";
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   
+</body>
+</html>

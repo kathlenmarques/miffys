@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:DM sans;
+    background-color: rgb(255, 253, 244);
+    color: rgb(19, 18, 18);  
+}
+main{ 
+    max-width: 1024px;
+}
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin:0 auto ;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: transparent;
+}
+header{
+    margin-bottom: 16px;
+    padding: 10px 0;
+    background-color: rgb(234, 255, 169);
+}
+h1{
+    background-color: rgb(234, 255, 169);
+}
+h2{
+    background-color: rgb(234, 255, 169);
+    border-radius: 8px;
+    padding: 10px;
+}
+.menu > li{
+    float: left;
+    list-style: none;
+    cursor: pointer;
+    padding: 16px;
+    position: relative;
+    font-weight: bold;
+    background-color: rgb(234, 255, 169);
+}
+.menu li:hover {
+    background-color: rgb(240, 253, 201);}
+.clear{
+    clear: both;
+}
+.texto-loja{
+    margin-left: 24px;
+    text-align: justify;
+}
+.sobre-a-loja{
+    display: flex;
+}
+.produto img{
+    max-width: 100%;
+    display: block;
+    margin: 30px 0 ;
+}
+.produtos p{
+    margin-bottom: 16px;
+    text-align: justify;
+}
+.produtos button{
+    margin-bottom: 30px;
+}
+.produtos button:hover{
+    background-color: rgb(240, 253, 201);
+    border: solid 1px ;
+}
+section h2{
+     margin: 24px 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(58, 56, 146);
+    text-align: center;
+}
+.destaque{
+    margin-bottom: 56px;
+}
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 24.3%);
+    column-gap: 1%;
+    margin-bottom: 5%;
+}
+.produto{
+    text-align: center;
+}
+.produto h3{
+    margin-bottom: 7%;
+    text-align: center;
+}
+.produto p{
+    font-size: small;
+    font-weight: light;
+    margin: 16px ;
+}
+.produto button{
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(234, 255, 169);
+    border: transparent;
+    cursor: pointer;
+}
+footer{
+    margin-bottom: 5%;
+    text-align: center;
+}
+@media screen and (max-width: 640px) {
+    h1{
+        font-size: 4.5em;
+    }
+    .sobre-a-loja{
+        display: block;
+    }
+    .container{
+        max-width: 90%;
+    }
+    .produto{
+        margin-bottom: 24px;
+    }
+    .produto img{
+        width: 100%;
+    }
+    .produtos{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #titulo-produtos{
+        margin: 24px 0 24px 24px;
+    }
+    header div.container{
+        flex-direction: column;
+    }
+    .img-loja{
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .texto-loja{
+        margin-left: 0px;
+        text-align: justify;
+    }
+    img{
+        width:90% ;
+    }
+    .texto-loja{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .produto button{
+        font-size: larger;
+        
+    }
+    #titulo-produtos{
+        width: 90%;
+    }
+    footer{
+        margin-bottom: 5%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    nav{
+        margin-right: 7%;
+    }
+    .container h1{
+        margin-left: 7% ;
+        ;
+    }
+    .container{
+        max-width: 98%;
+    }
+    .produtos{
+        grid-template-columns: repeat(2, 49%);
+    }
+    section h2{
+        margin-left: 7% ;
+    }
+    .sobre-a-loja{
+        display: block;
+    }
+    .img-loja{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .img-loja img{
+        width: 86%;
+    }
+    .produtos{
+        justify-content: center;
+        grid-template-columns: repeat(2, 42.3%);
+    }
+    .produtos img{
+        width: 100%;
+    }
+    .texto-loja{
+        width: 86%;
+        margin:0 auto ;
+    }
+    .texto-loja h2{
+        margin: 0 24px 24px 0;
+    }
+    #titulo-produtos{
+        width: 86%;
+    }
+    .sobre-a-loja h2{
+        width: 100%;
+    }
+    .produto button{
+        font-size: larger;
+        padding:10px 0 10px 0;
+        margin: 5px 0;
+    }
+    footer{
+        margin-bottom: 5%;
+        text-align: center;
+    }
+}
+@media screen and (min-width:1024px){
+}
